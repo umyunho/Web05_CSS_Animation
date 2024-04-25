@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #base{position: relative; width:1000px; height: 400px; border: 1px solid blue;}
+        #tire{position: relative; width:200px; height: 200px; top: 100px; background: red; border-radius: 50%; line-height: 200px; text-align: center; font-size: 50px; transition: 2s; color: purple; font-weight: bold;}
+        /* base에 마우스를 올리면 tire가 오른쪽으로 이동(400px) + 회전(180deg) + 크게(1.5) 되도록 변경한다. 
+        */
+        #tire:hover{
+            transform: translateX(700px) rotate(180deg) scale(1.5); 
+        }
+    </style>
+</head>
+<body>z
+    <div id="base">
+        <div id="tire">타이어</div>
+    </div>
+    
+</body>
+</html>
