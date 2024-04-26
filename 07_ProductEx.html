@@ -7,7 +7,12 @@
     <style type="text/css">
         body{display: flex; justify-content: center; align-items: center; height: 100vh;}
         .container{ width: 1000px; display: flex; height: 200px; border: 1px solid red; justify-content: space-between;}
-        .box{ width: 300px; height: 200px; border: 1px dotted black;}
+        .box{ width: 300px; height: 200px; border: 1px dotted black; transition-duration: 0.5s; transition-delay: 0.3;}
+        .caption{position: absolute; background: black; width: 300px; height: 200px; left: 0; top: 0; opacity: 0;transition-duration: 0.5s; transition-delay: 0.3;}
+        .caption h1, .caption p{ color: white; text-align: center;transition-duration: 0.5s; transition-delay: 0.3;}
+
+        .box:hover{transform: translateY(-20px);}
+        .box:hover .caption{opacity: 0.7;}
     </style>
 </head>
 <body>
